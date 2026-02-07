@@ -1,7 +1,0 @@
-Name,Interval count,Interval unit,Plan ID
-Gold annual,1,year,gold_annual
-Gold monthly,1,month,gold_monthly
-Gold bi-annual,6,month,gold_biannual
-Platinum annual,1,year,platinum_annual
-Platinum monthly,1,month,platinum_monthly
-Gold quarterly,3,month,gold_quarterly

@@ -1,3 +1,6 @@
 .DS_Store
 *.duckdb
 *.duckdb.wal
+
+# Raw data (public sample CSVs)
+data/*.csv

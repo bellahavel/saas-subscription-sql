@@ -23,6 +23,8 @@ Download the ZIP here:
 Source reference:
 - [ChartMogul Help Center: Adding sample data](https://help.chartmogul.com/article/120-adding-sample-data)
 
+Note: Raw CSV files are not committed to this repo. Download the ZIP and unzip into `saas-subscription-sql/data/`.
+
 ## Project Questions (Business-First)
 - Which customers generate the most revenue?
 - How does retention change by acquisition month (cohort retention)?
