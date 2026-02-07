@@ -1,7 +1,7 @@
 # SaaS Subscription Retention & Revenue Analysis (SQL-First)
 
 ## Executive Summary
-This project analyzes SaaS retention and revenue using SQL only, based on a public subscription billing dataset. The results show revenue concentration among a few customers, a repeat purchase rate of 66.7%, and cohort retention that drops after the first month but stabilizes afterward. Time-to-return patterns indicate a monthly billing cadence with a few long-gap reactivations. These insights highlight the importance of early-month retention and the outsized impact of top customers on revenue stability.
+This project analyzes SaaS retention and revenue using SQL only with a public subscription billing dataset. Findings show revenue concentration among a few customers, a 66.7% repeat purchase rate, and cohort retention that drops after month 0 but stabilizes afterward. Time-to-return patterns suggest a monthly billing cadence with a few long-gap reactivations. These insights point to early-month activation as the highest-leverage retention opportunity and highlight top-customer dependency risk.
 Final CSV outputs are reproducible via `sql/06_export_outputs.sql`.
 
 ## Quickstart
@@ -30,14 +30,6 @@ Note: Raw CSV files are not committed to this repo. Download the ZIP and unzip i
 - How does retention change by acquisition month (cohort retention)?
 - What percentage of customers place repeat orders?
 - How long does it take customers to return for a second purchase?
-
-## Setup (DuckDB)
-1. Download the ZIP and unzip into `saas-subscription-sql/data/`.
-2. Open DuckDB in this folder and run the load script:
-
-```sql
-.read sql/00_load_data.sql
-```
 
 ## SQL Files
 - `sql/00_load_data.sql`
