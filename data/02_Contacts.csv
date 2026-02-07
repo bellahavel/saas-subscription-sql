@@ -1,0 +1,22 @@
+Customer External ID,First name,Last name,Email,Position,Title,Phone,LinkedIn,Twitter,Note
+scus_001,Andrew,Jones,andrew@example.com,,CEO,(888) 555-0001,,,He's nickname is Andy
+scus_002,Bernard,Yolks,bernard@example.com,,Finance Manager,(888) 555-0002,,,Met him at networking night
+scus_003,Charlie,Williams,charlie@example.com,,COO,(888) 555-0003,,,
+scus_004,David,Michaels,david@example.com,,General Manager,(888) 555-0004,,,
+scus_005,Erin,Laine,erin@example.com,,CFO,(888) 555-0005,,,
+scus_006,Francis,Cook,francis@example.com,,Head of Product,(888) 555-0006,,,
+scus_007,Gwen,Archer,gwen@example.com,,VP of Sales,(888) 555-0007,,,
+scus_008,Hector,Lopez,hector@example.com,,VP of Finance,(888) 555-0008,,,
+scus_009,Ingrid,Richards,ingrid@example.com,,Product Marketing Manager,(888) 555-0009,,,
+scus_010,Jane,Smith,jane@example.com,,Data Engineer,(888) 555-0010,,,
+scus_011,Kendall,Hopkins,kendall@example.com,,CEO,(888) 555-0011,,,
+scus_012,Lois,Philips,lois@example.com,,Director of Operations,(888) 555-0012,,,
+scus_013,Mckenzie,Fox,mckenzie@example.com,,General Manager,(888) 555-0013,,,
+scus_014,Nina,Blues,nina@example.com,,COO,(888) 555-0014,,,
+scus_015,Oliver,Robbins,oliver@example.com,,CFO,(888) 555-0015,,,
+scus_016,Patty,Green,patty@example.com,,Director of Engineering,(888) 555-0016,,,
+scus_017,Quentin,Harvey,quentin@example.com,,Product Designer,(888) 555-0017,,,
+scus_018,Randy,Smith,randy@example.com,,Director of Operations,(888) 555-0018,,,
+scus_019,Sue,Miller,sue@example.com,,Data Engineer,(888) 555-0019,,,
+scus_020,Trevor,Iskilam,trevor@example.com,,Director of Engineering,(888) 555-0020,,,
+scus_021,Uma,Villar,uma@example.com,,CEO,(888) 555-0021,,,
