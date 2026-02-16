@@ -37,7 +37,7 @@ COPY (
   SELECT *
   FROM revenue_by_customer
   ORDER BY total_revenue_usd DESC
-) TO '/Users/bellahavel/Documents/New project/saas-subscription-sql/outputs/01_revenue_customers.csv' (HEADER, DELIMITER ',');
+) TO 'outputs/01_revenue_customers.csv' (HEADER, DELIMITER ',');
 
 COPY (
   -- Cohort retention by acquisition month
@@ -89,7 +89,7 @@ COPY (
     ON ca.cohort_month = cs.cohort_month
   GROUP BY ca.cohort_month, ca.month_number, cs.cohort_size
   ORDER BY ca.cohort_month, ca.month_number
-) TO '/Users/bellahavel/Documents/New project/saas-subscription-sql/outputs/02_retention_by_cohort.csv' (HEADER, DELIMITER ',');
+) TO 'outputs/02_retention_by_cohort.csv' (HEADER, DELIMITER ',');
 
 COPY (
   -- Repeat purchase rate
@@ -118,7 +118,7 @@ COPY (
     SUM(CASE WHEN successful_invoices >= 2 THEN 1 ELSE 0 END) AS repeat_customers,
     ROUND(SUM(CASE WHEN successful_invoices >= 2 THEN 1 ELSE 0 END) * 1.0 / COUNT(*), 4) AS repeat_rate
   FROM counts
-) TO '/Users/bellahavel/Documents/New project/saas-subscription-sql/outputs/03_repeat_rate.csv' (HEADER, DELIMITER ',');
+) TO 'outputs/03_repeat_rate.csv' (HEADER, DELIMITER ',');
 
 COPY (
   -- Time to return (second purchase)
@@ -151,7 +151,7 @@ COPY (
   FROM ordered
   WHERE rn = 2
   ORDER BY days_to_return ASC
-) TO '/Users/bellahavel/Documents/New project/saas-subscription-sql/outputs/04_time_to_return.csv' (HEADER, DELIMITER ',');
+) TO 'outputs/04_time_to_return.csv' (HEADER, DELIMITER ',');
 
 COPY (
   -- Monthly revenue trend
@@ -189,4 +189,4 @@ COPY (
     revenue_usd - LAG(revenue_usd) OVER (ORDER BY revenue_month) AS revenue_change_mom
   FROM monthly
   ORDER BY revenue_month
-) TO '/Users/bellahavel/Documents/New project/saas-subscription-sql/outputs/05_revenue_mom.csv' (HEADER, DELIMITER ',');
+) TO 'outputs/05_revenue_mom.csv' (HEADER, DELIMITER ',');
