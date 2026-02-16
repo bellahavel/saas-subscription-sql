@@ -9,7 +9,7 @@
 - Cohort retention drops after month 0, then stabilizes
 
 ## Executive Summary
-This project analyzes SaaS retention and revenue using SQL only with a public subscription billing dataset. Findings show revenue concentration among a few customers, a 66.7% repeat purchase rate, and cohort retention that drops after month 0 but stabilizes afterward. Time-to-return patterns suggest a monthly billing cadence with a few long-gap reactivations. These insights point to early-month activation as the highest-leverage retention opportunity and highlight top-customer dependency risk.
+This SQL‑only analysis answers core SaaS questions on retention and revenue using a public billing dataset. The work quantifies customer concentration risk, repeat purchase behavior, cohort retention, and time‑to‑return. Results show a 66.7% repeat rate, a sharp drop after month 0 with a stable core cohort, and a monthly cadence with a few long‑gap reactivations. The highest‑leverage opportunity is improving early‑month activation; top‑customer dependency is the main revenue risk.
 Final CSV outputs are reproducible via `sql/06_export_outputs.sql`.
 
 ## Case Study
